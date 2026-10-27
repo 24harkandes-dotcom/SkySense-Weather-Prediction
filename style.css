@@ -1,0 +1,58 @@
+/* SkySense theme: navy #0b1f3a, blue #1e6fd9, sky #5fb3f5, cloud #f3f8fd, amber #f5a623 */
+#MainMenu, footer {visibility: hidden;}
+header[data-testid="stHeader"] {background: transparent;}
+.block-container {max-width: 1180px; padding-top: 1.2rem; padding-bottom: 3rem;}
+html, body, [class*="css"] {font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;}
+h1, h2, h3 {color: #0b1f3a; letter-spacing: -0.01em;}
+
+/* ---------- top brand bar + navigation ---------- */
+.brandbar {display:flex; align-items:center; gap:.6rem; margin-bottom:.4rem;}
+.brandbar .logo {font-size:1.7rem;}
+.brandbar .name {font-size:1.35rem; font-weight:800; color:#0b1f3a;}
+.brandbar .name span {color:#1e6fd9;}
+div[data-testid="stRadio"] > div[role="radiogroup"] {flex-wrap: wrap; gap:.4rem;}
+div[data-testid="stRadio"] label {background:#fff; border:1px solid #c9dbef; border-radius:999px; padding:.3rem .95rem; cursor:pointer;}
+div[data-testid="stRadio"] label:has(input:checked) {background:#0b1f3a; border-color:#0b1f3a;}
+div[data-testid="stRadio"] label:has(input:checked) p {color:#fff !important; font-weight:700;}
+div[data-testid="stRadio"] label > div:first-child {display:none;}          /* hide the round radio dot -> pill look */
+div[data-testid="stRadio"] label p {margin:0; font-size:.95rem;}
+
+/* ---------- hero ---------- */
+.hero {background: linear-gradient(135deg,#0b1f3a 0%,#123a73 55%,#1e6fd9 100%); color:#fff; border-radius:24px; padding:2.6rem 2.4rem; position:relative; overflow:hidden; margin:.6rem 0 1.2rem;}
+.hero h1 {color:#fff; font-size:2.7rem; line-height:1.1; margin:0 0 .5rem; max-width:680px;}
+.hero .eyebrow {text-transform:uppercase; letter-spacing:.16em; font-size:.78rem; color:#9fd0ff; font-weight:700;}
+.hero p {color:#e3f0ff; font-size:1.08rem; max-width:620px; margin:.2rem 0;}
+.hero .tag {color:#ffd58a; font-style:italic; font-size:1.05rem;}
+.hero svg {position:absolute; right:-10px; top:6px; width:360px; opacity:.95;}
+@media (max-width: 800px) {.hero h1 {font-size:1.9rem;} .hero svg {display:none;} .hero {padding:1.8rem 1.3rem;}}
+
+/* ---------- cards ---------- */
+.card {background:#fff; border:1px solid #d7e5f5; border-radius:18px; padding:1.1rem 1.25rem; box-shadow:0 2px 10px rgba(11,31,58,.06); height:100%;}
+.card h4 {margin:.1rem 0 .3rem; color:#0b1f3a;}
+.card p {margin:0; color:#33506f; font-size:.95rem;}
+.navcard .icon {font-size:2.1rem;}
+.fact {background:#fff; border-left:6px solid #1e6fd9; border-radius:12px; padding:.8rem 1rem; margin-bottom:.7rem; box-shadow:0 1px 6px rgba(11,31,58,.06);}
+.fact b {color:#0b1f3a;} .fact span {color:#33506f;}
+.note {background:#fff8e8; border:1px solid #f3d899; border-radius:12px; padding:.75rem 1rem; color:#5b4310; font-size:.93rem;}
+.note.info {background:#eaf4ff; border-color:#b9d9f8; color:#12365f;}
+.section-title {font-size:1.5rem; font-weight:800; color:#0b1f3a; margin:1.2rem 0 .1rem;}
+.section-sub {color:#4b6684; margin-bottom:.8rem;}
+
+/* ---------- result card ---------- */
+.result {border-radius:22px; padding:1.6rem 1.8rem; color:#fff; margin:.4rem 0 1rem;}
+.result.rain {background:linear-gradient(135deg,#0b1f3a,#1e6fd9);}
+.result.dry {background:linear-gradient(135deg,#0f5e8c,#f0a92b);}
+.result .big {font-size:2.1rem; font-weight:800; line-height:1.15;}
+.result .icon {font-size:3.2rem; float:right; margin-left:1rem;}
+.result .sub {color:#eaf4ff; margin-top:.4rem; font-size:1.02rem;}
+.meter {background:#dbe8f6; border-radius:999px; height:16px; position:relative; margin:.5rem 0 .2rem;}
+.meter .fill {height:16px; border-radius:999px; background:linear-gradient(90deg,#5fb3f5,#1e6fd9);}
+.meter .thr {position:absolute; top:-5px; width:3px; height:26px; background:#f5a623;}
+.chip {display:inline-block; background:#e4eefa; color:#0b1f3a; border-radius:999px; padding:.15rem .7rem; font-size:.85rem; margin:0 .3rem .3rem 0; font-weight:600;}
+.chip.good {background:#e0f5ea; color:#0c5a33;} .chip.bad {background:#fde7e3; color:#7d1f10;}
+
+/* ---------- buttons ---------- */
+.stButton > button, .stFormSubmitButton > button {border-radius:12px; font-weight:700; border:1px solid #1e6fd9;}
+.stButton > button[kind="primary"], .stFormSubmitButton > button[kind="primary"] {background:linear-gradient(90deg,#1e6fd9,#2f8cf0); color:#fff; border:none; padding:.55rem 1.4rem;}
+.stButton > button:focus-visible {outline:3px solid #f5a623;}
+.footer {color:#5d7590; font-size:.85rem; text-align:center; margin-top:2rem;}

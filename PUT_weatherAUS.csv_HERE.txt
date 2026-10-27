@@ -1,0 +1,3 @@
+Place weatherAUS.csv in this folder (or next to the notebook).
+Recommended: https://rattle.togaware.com/weatherAUS.csv  (runs to 2026, includes RISK_MM, which the notebook removes as leakage).
+The older Kaggle copy ("Rain in Australia") also works; the notebook then splits the timeline 70/15/15.
